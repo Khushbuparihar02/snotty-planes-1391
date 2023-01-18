@@ -1,0 +1,71 @@
+* {
+    font-family: system-ui;
+}
+
+body {
+    height: 200%;
+    width: 200%;
+    overflow-x: hidden;
+}
+
+#main {
+    width: 100%;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    bottom: 0;
+    overflow: auto;
+}
+
+.content {
+    position: absolute;
+    left: 230px;
+    width: 1080px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checked {
+    color: orange;
+}
+#menu{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto, 100px);
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+}
+.card{
+    width: 250px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+}
+.card>span{
+    font-size: 12px;
+    margin: 5px 0px 5px 0px;
+    display: block;
+}
+.card>div>span{
+    font-size: 10px;
+}
+
+#brand>img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+#brand{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 5px);
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;    
+}
