@@ -106,3 +106,150 @@ let brandsArr = [
 
 ]
 showBrands(brandsArr);
+let sizeArr = [3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 14, 15, 17]
+
+function showSizeBoxes(arr) {
+    let sizeDiv = document.getElementById('size');
+    arr.map((e) => {
+        let numDiv = document.createElement('div');
+        numDiv.setAttribute("class", "num-div");
+
+        let number = document.createElement('span');
+        number.innerHTML = e;
+
+        numDiv.append(number);
+        sizeDiv.append(numDiv);
+    });
+
+}
+showSizeBoxes(sizeArr);
+
+let priceArr = ["Under $50", "$50-$100", "$100-$150", "$150-$200", "$200-$250", "Over $250"]
+
+function showPrice(arr) {
+    let priceDivContainer = document.getElementById('price');
+    arr.map((e) => {
+        let priceDiv = document.createElement('div');
+        priceDiv.setAttribute("class", "price-div");
+
+        let price = document.createElement('span');
+        price.innerHTML = e;
+
+        let checkBox = document.createElement('input')
+        checkBox.type = "checkBox";
+
+        priceDiv.append(price, checkBox);
+        priceDivContainer.append(priceDiv);
+
+    });
+
+}
+showPrice(priceArr);
+
+let colorsArr = ["Black", "Grey", "White", "Blue", "Green", "Red", "Beige", "Off-White", "Orange", "Multi Color", "Brown", "Pink", "Purple", "Yellow", "Metallic"]
+
+function showColors(arr) {
+    let colorContainer = document.getElementById('color');
+    arr.map((e) => {
+        let colorDiv = document.createElement('div');
+
+        let color = document.createElement('div');
+        color.setAttribute("class", "color-div");
+        color.style.backgroundColor = e.toLowerCase();
+
+        let colorName = document.createElement('span')
+        colorName.innerHTML = e;
+
+        colorDiv.append(color, colorName);
+        colorContainer.append(colorDiv);
+
+    });
+}
+showColors(colorsArr);
+
+let collectionsArr = ["Nike Air Max", "Nike Air Vapormax", "Nike Air Max 97", "Nike Air Max 95", "Nike Air Max 270", "Nike Air Max 90", "Nike Huarache", "Nike React", "Nike Pegasus", "adidas Boost", "adidas UltraBOOST", "adidas NMD", "adidas Originals", "Reebok Classics", "New Balance Classics", "Nike Sportswear",]
+
+function showCollection(arr) {
+    let collectionContainerDiv = document.getElementById('collection');
+    arr.map((e) => {
+        let collectionDiv = document.createElement('div');
+        collectionDiv.setAttribute("class", "collection-div");
+
+        let collection = document.createElement('span');
+        collection.innerHTML = e;
+
+        let checkBox = document.createElement('input')
+        checkBox.type = "checkBox";
+
+        collectionDiv.append(collection, checkBox);
+        collectionContainerDiv.append(collectionDiv);
+
+    });
+
+}
+showCollection(collectionsArr);
+
+let typeArr = ["Retro","Slip Ons","Cleats","Performance Running","Neutral","Stability","Lightweight","Trail"];
+
+function showType(arr) {
+    let typeContainerDiv = document.getElementById('type');
+    arr.map((e) => {
+        let typeDiv = document.createElement('div');
+        typeDiv.setAttribute("class", "type-div");
+
+        let type = document.createElement('span');
+        type.innerHTML = e;
+
+        let checkBox = document.createElement('input')
+        checkBox.type = "checkBox";
+
+        typeDiv.append(type, checkBox);
+        typeContainerDiv.append(typeDiv);
+
+    });
+
+}
+showType(typeArr);
+
+let widthArr = ["2E - Men's Wide","4E - Men's X-Wide"];
+
+function showWidth(arr){
+    let widthContainerDiv = document.getElementById('wide-width');
+    arr.map((e)=>{
+        let widthDiv = document.createElement('div');
+        widthDiv.setAttribute('class', 'width-div');
+
+        let width = document.createElement('span');
+        width.innerHTML = e;
+
+        let checkBox = document.createElement('input');
+        checkBox.type = "checkBox";
+
+        widthDiv.append(width, checkBox);
+        widthContainerDiv.append(widthDiv);
+    })
+}
+showWidth(widthArr);
+
+
+let sustainableArr = ["Sustainable"];
+
+function showSustainable(arr){
+    let sustainableContainerDiv = document.getElementById('sustainable');
+    arr.map((e)=>{
+        let sustainableDiv = document.createElement('div');
+        sustainableDiv.setAttribute('class', 'sustainable-div');
+
+        let sustainable = document.createElement('span');
+        sustainable.innerHTML = e;
+
+        let checkBox = document.createElement('input');
+        checkBox.type = "checkBox";
+
+        sustainableDiv.append(sustainable, checkBox);
+        sustainableContainerDiv.append(sustainableDiv);
+    })
+}
+showSustainable(sustainableArr);
+
+

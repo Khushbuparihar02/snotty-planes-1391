@@ -10,22 +10,28 @@ body {
 
 #main {
     width: 100%;
+    cursor: pointer;
 }
 
 .sidebar {
     width: 200px;
-    position: fixed;
+    position:absolute;
     top: 20px;
     left: 10px;
     bottom: 0;
-    overflow: auto;
+    /* overflow: auto; */
+    margin-left: 70px;
+    
 }
 
 .content {
     position: absolute;
     left: 230px;
     width: 1080px;
+    margin-left: 100px;
+    
 }
+ 
 
 .options {
     display: flex;
@@ -35,7 +41,8 @@ body {
 .checked {
     color: orange;
 }
-#menu{
+
+#menu {
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -43,29 +50,93 @@ body {
     grid-row-gap: 20px;
     grid-column-gap: 10px;
 }
-.card{
+
+.card {
     width: 250px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 10px;
+    cursor: pointer;
 }
-.card>span{
+.card:hover{
+    transform: scale(1.09);
+    box-shadow: 0 10px 20px rgpa(0,0,0,.12),04px 8px rgpa(0,0,0,.06);
+}
+.card>span {
     font-size: 12px;
     margin: 5px 0px 5px 0px;
     display: block;
 }
-.card>div>span{
+
+.card>div>span {
     font-size: 10px;
 }
 
-#brand>img{
+#brand>img {
     height: 50px;
     width: 50px;
     object-fit: cover;
 }
-#brand{
+
+#brand {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(auto, 5px);
     grid-row-gap: 20px;
-    grid-column-gap: 10px;    
+    grid-column-gap: 10px;
+}
+
+#size {
+    display: grid;
+    grid-template-columns: repeat(4, 43px);
+    grid-template-rows: repeat(auto, 10px);
+    grid-row-gap: -10px;
+}
+
+.num-div {
+    border: 1px solid grey;
+    height: 20px;
+    width: auto;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    border-collapse: collapse;
+    margin: 5px;
+}
+
+.num-div:hover {
+    background-color: grey;
+    color: white;
+}
+
+.price-div,
+.collection-div, .type-div, .width-div, .sustainable-div {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    cursor: pointer;
+}
+
+
+
+.collection-div {
+    margin: 2px 0px;
+    width: 165px;
+}
+
+#color>div {
+    display: flex;
+    justify-content: flex-start;
+    width: 140px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.color-div {
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid grey;
+    border-radius: 50%;
+    display: inline;
+    margin: 0px 10px;
 }
