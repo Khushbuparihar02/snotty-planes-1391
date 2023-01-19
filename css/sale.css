@@ -1,0 +1,47 @@
+* {
+    font-family: system-ui;
+}
+
+body {
+    height: 200%;
+    width: 200%;
+    overflow-x: hidden;
+}
+
+#main {
+    width: 100%;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    bottom: 0;
+    overflow: auto;
+    margin-left: 80px;
+}
+h4{
+    margin: 30px 0px 5px 0px;
+    padding: 0;
+}
+.category-div > span{
+    font-size: 12px;
+    color: rgb(49, 49, 49);
+}
+.content{
+    position: absolute;
+    left: 320px;
+    width: 1080px;
+}
+.content-sales-div{
+    display: flex;
+}
+.content-sales-div > div{
+    border: 2px solid  grey;
+    min-height: 130px;
+    min-width: 212px;
+    text-align: center;
+    padding-top: 60px;
+    margin: 20px;
+}
