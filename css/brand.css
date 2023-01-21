@@ -1,0 +1,38 @@
+* {
+    font-family: system-ui;
+}
+
+.container {
+    height: auto;
+    width: 100%;
+    margin: auto;
+}
+
+ .feature-brand{
+    border: 1px solid pink;
+    height: 280px;
+    text-align: center;
+      background-color: #f2f2f2;
+ }
+ .feature-brand>h3{
+    font-weight: normal;
+ }
+ .feature-img{
+    border: 1px solid green;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-top: 20px;
+    margin: auto;
+ }
+ .feature-img >div>img{
+    border: 1px solid red;
+    height: 70%;
+    width: 90%;
+ }
+ .feature-img>div>a{
+    text-decoration: none;
+      color: black;
+      cursor: pointer;
+      
+ }
